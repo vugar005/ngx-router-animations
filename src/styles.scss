@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Lato', sans-serif !important;
+}
+
+.navigation-wrapper {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  display: flex;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  background: #333333;
+  margin: 0;
+}

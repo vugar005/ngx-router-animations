@@ -1,0 +1,16 @@
+:host {
+    display: flex;
+    padding: 5px;
+    background: white;
+}
+
+
+.nav_btn {
+  text-decoration: none;
+  color: rgb(170, 170, 170);
+  padding: 10px;
+  font-size: 15px;
+  &.active {
+    color: #2c3e50;
+   }
+}

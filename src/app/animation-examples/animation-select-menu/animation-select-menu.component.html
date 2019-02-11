@@ -1,0 +1,84 @@
+<button  [matMenuTriggerFor]="animations"  class="menu-trigger">SELECT YOUR DREAM ANIMATION</button>
+
+<mat-menu #animations="matMenu" [class]="'animation-menu'">
+  <button mat-menu-item [matMenuTriggerFor]="move">MOVE</button>
+  <button mat-menu-item [matMenuTriggerFor]="fade">FADE</button>
+  <button mat-menu-item [matMenuTriggerFor]="differentEasing">DIFFERENT EASING</button>
+  <button mat-menu-item [matMenuTriggerFor]="scale">SCALE</button>
+  <button mat-menu-item [matMenuTriggerFor]="rotate">ROTATE</button>
+  <button mat-menu-item (click)="onSelect($event,'slide')">SLIDE</button>
+</mat-menu>
+
+<mat-menu #move="matMenu">
+  <button mat-menu-item (click)="onSelect($event,'moveFromLeft')">MOVE FROM LEFT</button>
+  <button mat-menu-item (click)="onSelect($event,'moveFromRight')">MOVE FROM RIGHT</button>
+  <button mat-menu-item (click)="onSelect($event,'moveFromTop')">MOVE FROM TOP</button>
+  <button mat-menu-item (click)="onSelect($event,'moveFromBottom')">MOVE FROM BOTTOM</button>
+</mat-menu>
+
+<mat-menu #fade="matMenu">
+  <button mat-menu-item (click)="onSelect($event,'moveFromLeftFade')">FADE FROM LEFT</button>
+  <button mat-menu-item (click)="onSelect($event,'moveFromRightFade')">FADE FROM RIGHT</button>
+  <button mat-menu-item (click)="onSelect($event,'moveFromTopFade')">FADE FROM TOP</button>
+  <button mat-menu-item (click)="onSelect($event,'moveFromBottomFade')">FADE FROM BOTTOM</button>
+</mat-menu>
+
+<mat-menu #differentEasing="matMenu">
+  <button mat-menu-item (click)="onSelect($event,'fromLeftEasing')">EASING FROM LEFT</button>
+  <button mat-menu-item (click)="onSelect($event,'fromRightEasing')">EASING FROM RIGHT</button>
+  <button mat-menu-item (click)="onSelect($event,'fromTopEasing')">EASING FROM TOP</button>
+  <button mat-menu-item (click)="onSelect($event,'fromBottomEasing')">EASING FROM BOTTOM</button>
+</mat-menu>
+
+
+
+<mat-menu #rotate="matMenu">
+  <button mat-menu-item  [matMenuTriggerFor]="glue">GLUE</button>
+  <button mat-menu-item [matMenuTriggerFor]="flip">FLIP</button>
+  <button mat-menu-item [matMenuTriggerFor]="room">ROOM</button>
+  <button mat-menu-item [matMenuTriggerFor]="cube">CUBE</button>
+  <button mat-menu-item [matMenuTriggerFor]="carousel">CAOROUSEL</button>
+  <button mat-menu-item (click)="onSelect($event,'rotateSides')" >SIDES</button>
+</mat-menu>
+
+<mat-menu #glue="matMenu">
+  <button mat-menu-item (click)="onSelect($event,'rotateGlueFromLeft')">GLUE FROM LEFT</button>
+  <button mat-menu-item (click)="onSelect($event,'rotateGlueFromRight')">GLUE FROM RIGHT</button>
+  <button mat-menu-item (click)="onSelect($event,'rotateGlueFromTop')">GLUE FROM TOP</button>
+  <button mat-menu-item (click)="onSelect($event,'rotateGlueFromBottom')">GLUE FROM BOTTOM</button>
+</mat-menu>
+
+<mat-menu #flip="matMenu">
+  <button mat-menu-item (click)="onSelect($event,'rotateFlipToLeft')">FLIP TO LEFT</button>
+  <button mat-menu-item (click)="onSelect($event,'rotateFlipToRight')">FLIP TO RIGHT</button>
+  <button mat-menu-item (click)="onSelect($event,'rotateFlipToTop')">FLIP TO TOP</button>
+  <button mat-menu-item (click)="onSelect($event,'rotateFlipToBottom')">FLIP TO BOTTOM</button>
+</mat-menu>
+
+<mat-menu #room="matMenu">
+  <button mat-menu-item (click)="onSelect($event,'rotateRoomToLeft')">ROOM TO LEFT</button>
+  <button mat-menu-item (click)="onSelect($event,'rotateRoomToRight')">ROOM TO RIGHT</button>
+  <button mat-menu-item (click)="onSelect($event,'rotateRoomToTop')">ROOM TO TOP</button>
+  <button mat-menu-item (click)="onSelect($event,'rotateRoomToBottom')">ROOM TO BOTTOM</button>
+</mat-menu>
+
+<mat-menu #cube="matMenu">
+  <button mat-menu-item (click)="onSelect($event,'rotateCubeToLeft')">CUBE TO LEFT</button>
+  <button mat-menu-item (click)="onSelect($event,'rotateCubeToRight')">CUBE TO RIGHT</button>
+  <button mat-menu-item (click)="onSelect($event,'rotateCubeToTop')">CUBE TO TOP</button>
+  <button mat-menu-item (click)="onSelect($event,'rotateCubeToBottom')">CUBE TO BOTTOM</button>
+</mat-menu>
+
+<mat-menu #carousel="matMenu">
+  <button mat-menu-item (click)="onSelect($event,'rotateCarouselToLeft')">ROTATE CAROUSEL TO LEFT</button>
+  <button mat-menu-item (click)="onSelect($event,'rotateCarouselToRight')">ROTATE CAROUSEL TO RIGHT</button>
+  <button mat-menu-item (click)="onSelect($event,'rotateCarouselToTop')">ROTATE CAROUSEL TO TOP</button>
+  <button mat-menu-item (click)="onSelect($event,'rotateCarouselToBottom')">ROTATE CAROUSEL TO BOTTOM</button>
+</mat-menu>
+
+<mat-menu #scale="matMenu">
+  <button mat-menu-item (click)="onSelect($event,'scaleDownFromLeft')">SCALE FROM LEFT</button>
+  <button mat-menu-item (click)="onSelect($event,'scaleDownFromRight')">SCALE FROM RIGHT</button>
+  <button mat-menu-item (click)="onSelect($event,'scaleDownFromTop')">SCALE FROM TOP</button>
+  <button mat-menu-item (click)="onSelect($event,'scaleDownFromBottom')">SCALE FROM BOTTOM</button>
+</mat-menu>

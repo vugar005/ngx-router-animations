@@ -1,0 +1,30 @@
+:host {
+  display: block;
+  position: relative;
+}
+.router-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  perspective: 1200px;
+  transform-style: preserve-3d;
+}
+
+.animation-triggers {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .action-title {
+    color: #ffffff;
+    margin: 25px 0 10px 0;
+    font-size: 18px;
+
+  }
+}

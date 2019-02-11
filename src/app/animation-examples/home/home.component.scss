@@ -1,0 +1,25 @@
+:host {
+  display: block;
+  position: absolute;
+ width: 100vw;
+ height: 100vh;
+ background: #60d7a9;
+}
+
+h1 {
+  font-size: 3rem;
+  color: white;
+  letter-spacing: 6px;
+  padding: 50px;
+  text-align: center;
+  line-height: 1;
+  text-transform: uppercase;
+  strong {
+    color: rgba(0,0,0,0.3);
+  }
+  span {
+    display: block;
+    font-size: 1rem;
+    font-family: 'serif';
+  }
+}

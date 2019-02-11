@@ -1,0 +1,58 @@
+<div
+  class="router-wrapper"
+  [@moveFromLeft]="getState(o, 'moveFromLeft')"
+  [@moveFromRight]="getState(o, 'moveFromRight')"
+  [@moveFromTop]="getState(o, 'moveFromTop')"
+  [@moveFromBottom]="getState(o, 'moveFromBottom')"
+
+  [@moveFromLeftFade]="getState(o, 'moveFromLeftFade')"
+  [@moveFromRightFade]="getState(o, 'moveFromRightFade')"
+  [@moveFromTopFade]="getState(o, 'moveFromTopFade')"
+  [@moveFromBottomFade]="getState(o, 'moveFromBottomFade')"
+
+  [@fromLeftEasing]="getState(o, 'fromLeftEasing')"
+  [@fromRightEasing]="getState(o, 'fromRightEasing')"
+  [@fromTopEasing]="getState(o, 'fromTopEasing')"
+  [@fromBottomEasing]="getState(o, 'fromBottomEasing')"
+
+  [@scaleDownFromLeft]="getState(o, 'scaleDownFromLeft')"
+  [@scaleDownFromRight]="getState(o, 'scaleDownFromRight')"
+  [@scaleDownFromTop]="getState(o, 'scaleDownFromTop')"
+  [@scaleDownFromBottom]="getState(o, 'scaleDownFromBottom')"
+
+  [@rotateGlueFromLeft]="getState(o, 'rotateGlueFromLeft')"
+  [@rotateGlueFromRight]="getState(o, 'rotateGlueFromRight')"
+  [@rotateGlueFromTop]="getState(o, 'rotateGlueFromTop')"
+  [@rotateGlueFromBottom]="getState(o, 'rotateGlueFromBottom')"
+
+  [@rotateFlipToLeft]="getState(o, 'rotateFlipToLeft')"
+  [@rotateFlipToRight]="getState(o, 'rotateFlipToRight')"
+  [@rotateFlipToTop]="getState(o, 'rotateFlipToTop')"
+  [@rotateFlipToBottom]="getState(o, 'rotateFlipToBottom')"
+
+  [@rotateRoomToLeft]="getState(o, 'rotateRoomToLeft')"
+  [@rotateRoomToRight]="getState(o, 'rotateRoomToRight')"
+  [@rotateRoomToTop]="getState(o, 'rotateRoomToTop')"
+  [@rotateRoomToBottom]="getState(o, 'rotateRoomToBottom')"
+
+  [@rotateCubeToLeft]="getState(o, 'rotateCubeToLeft')"
+  [@rotateCubeToRight]="getState(o, 'rotateCubeToRight')"
+  [@rotateCubeToTop]="getState(o, 'rotateCubeToTop')"
+  [@rotateCubeToBottom]="getState(o, 'rotateCubeToBottom')"
+
+  [@rotateCarouselToLeft]="getState(o, 'rotateCarouselToLeft')"
+  [@rotateCarouselToRight]="getState(o, 'rotateCarouselToRight')"
+  [@rotateCarouselToTop]="getState(o, 'rotateCarouselToTop')"
+  [@rotateCarouselToBottom]="getState(o, 'rotateCarouselToBottom')"
+
+  [@rotateSides]="getState(o, 'rotateSides')"
+
+  [@slide]="getState(o, 'slide')"
+>
+  <router-outlet #o="outlet" > </router-outlet>
+
+</div>
+
+<div class="animation-triggers" >
+    <animation-select-menu (animationSelect)= "onSelect($event)"></animation-select-menu>
+</div>
