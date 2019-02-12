@@ -1,4 +1,4 @@
-import {animate, style, group, query, keyframes, animation} from '@angular/animations';
+import {animate, style, group, query, keyframes, animation, AnimationReferenceMetadata} from '@angular/animations';
 import {sharedStyles} from './utils';
 import {
  moveToLeftKeyframes,
@@ -14,7 +14,7 @@ import {
  } from './shared-keyframes';
 
  /** Move*/
-  export const moveFromLeft = animation([
+  export const moveFromLeft: AnimationReferenceMetadata = animation([
    query(':enter, :leave', style(sharedStyles)
       , { optional: true }),
     group([
@@ -29,7 +29,7 @@ import {
     ])
         ],    { params: { enterTiming: '.6', leaveTiming: '0.6', enterDelay: '0', leaveDelay: '0' } });
 
-     export const moveFromRight = animation([
+     export const moveFromRight: AnimationReferenceMetadata = animation([
    query(':enter, :leave', style(sharedStyles)
       , { optional: true }),
     group([
@@ -42,7 +42,7 @@ import {
     ])
         ],    { params: { enterTiming: '.6', leaveTiming: '0.6', enterDelay: '0', leaveDelay: '0' } });
 
-          export const moveFromTop = animation([
+          export const moveFromTop: AnimationReferenceMetadata = animation([
    query(':enter, :leave', style(sharedStyles)
       , { optional: true }),
     group([
@@ -58,7 +58,7 @@ import {
         ],    { params: { enterTiming: '.6', leaveTiming: '0.6',  enterDelay: '0', leaveDelay: '0' } });
 
 
-         export const moveFromBottom = animation([
+         export const moveFromBottom: AnimationReferenceMetadata = animation([
    query(':enter, :leave', style(sharedStyles)
       , { optional: true }),
     group([
@@ -75,7 +75,7 @@ import {
 
 
   /** Fade*/
-  export const moveFromLeftFade = animation([
+  export const moveFromLeftFade: AnimationReferenceMetadata = animation([
    query(':enter, :leave', style(sharedStyles)
       , { optional: true }),
     group([
@@ -90,7 +90,7 @@ import {
     ])
         ],    { params: { enterTiming: '.6', leaveTiming: '0.7',  enterDelay: '0', leaveDelay: '0' } });
 
-     export const moveFromRightFade = animation([
+     export const moveFromRightFade: AnimationReferenceMetadata = animation([
    query(':enter, :leave', style(sharedStyles)
       , { optional: true }),
     group([
@@ -105,7 +105,7 @@ import {
     ])
         ],    { params: { enterTiming: '.6', leaveTiming: '0.7', enterDelay: '0', leaveDelay: '0' } });
 
-          export const moveFromTopFade = animation([
+          export const moveFromTopFade: AnimationReferenceMetadata = animation([
    query(':enter, :leave', style(sharedStyles)
       , { optional: true }),
     group([
@@ -121,7 +121,7 @@ import {
         ],    { params: { enterTiming: '.6',leaveTiming: '0.7',  enterDelay: '0', leaveDelay: '0' } });
 
 
-         export const moveFromBottomFade = animation([
+         export const moveFromBottomFade: AnimationReferenceMetadata = animation([
    query(':enter, :leave', style(sharedStyles)
       , { optional: true }),
     group([
@@ -168,7 +168,7 @@ import {
     ])
         ],    { params: { enterTiming: '.6', leaveTiming: '0.8',  enterDelay: '0', leaveDelay: '0' } });
 
-         export const fromTopEasing = animation([
+         export const fromTopEasing: AnimationReferenceMetadata = animation([
    query(':enter, :leave', style(sharedStyles)
       , { optional: true }),
     group([
@@ -183,7 +183,7 @@ import {
     ])
         ],    { params: { enterTiming: '.6', leaveTiming: '0.8',  enterDelay: '0', leaveDelay: '0' } });
 
-         export const fromBottomEasing = animation([
+         export const fromBottomEasing: AnimationReferenceMetadata = animation([
    query(':enter, :leave', style(sharedStyles)
    , { optional: true }),
   //  query(':enter', style({'opacity': '0'})
@@ -202,7 +202,7 @@ import {
 
 /** Scale */
 
-export const scaleDownFromLeft = animation( [
+export const scaleDownFromLeft: AnimationReferenceMetadata = animation( [
  query(':enter, :leave', style(sharedStyles)
     , { optional: true }),
     group([
@@ -216,7 +216,7 @@ export const scaleDownFromLeft = animation( [
 ], {params: {enterTiming: '0.6', leaveTiming: '0.7', enterDelay: '0', leaveDelay: '0'}});
 
 
-export const scaleDownFromRight = animation( [
+export const scaleDownFromRight: AnimationReferenceMetadata = animation( [
  query(':enter, :leave', style(sharedStyles)
     , { optional: true }),
     group([
@@ -231,7 +231,7 @@ export const scaleDownFromRight = animation( [
 ], {params: {enterTiming: '0.6', leaveTiming: '0.7', enterDelay: '0', leaveDelay: '0'}});
 
 
-export const scaleDownFromTop = animation( [
+export const scaleDownFromTop: AnimationReferenceMetadata = animation( [
  query(':enter, :leave', style(sharedStyles)
     , { optional: true }),
     group([
@@ -245,7 +245,7 @@ export const scaleDownFromTop = animation( [
     ]),
 ], {params: {enterTiming: '0.6', leaveTiming: '0.7', enterDelay: '0', leaveDelay: '0'}});
 
-export const scaleDownFromBottom = animation( [
+export const scaleDownFromBottom: AnimationReferenceMetadata = animation( [
  query(':enter, :leave', style(sharedStyles)
     , { optional: true }),
     group([
@@ -259,7 +259,7 @@ export const scaleDownFromBottom = animation( [
     ]),
 ], {params: {enterTiming: '0.6', leaveTiming: '0.7',  enterDelay: '0', leaveDelay: '0'}});
 
-export const scaleDownScaleDown = animation( [
+export const scaleDownScaleDown: AnimationReferenceMetadata = animation( [
  query(':enter, :leave', style(sharedStyles)
     , { optional: true }),
     group([
@@ -278,7 +278,7 @@ export const scaleDownScaleDown = animation( [
 ], {params: {enterTiming: '0.5', leaveTiming: '0.7',  enterDelay: '0', leaveDelay: '0'}});
 
    /** Rotate animations */
-export const rotateCubeToLeft = animation([
+export const rotateCubeToLeft: AnimationReferenceMetadata = animation([
     query(':enter, :leave', style(sharedStyles)
       , { optional: true }),
     group([
@@ -301,7 +301,7 @@ export const rotateCubeToLeft = animation([
     ])
   ], {params: {enterTiming: '0.6', leaveTiming: '0.6',  enterDelay: '0', leaveDelay: '0'}});
 
-  export const rotateCubeToRight = animation([
+  export const rotateCubeToRight: AnimationReferenceMetadata = animation([
          query(':enter, :leave', style(sharedStyles)
       , { optional: true }),
     group([
@@ -324,7 +324,7 @@ export const rotateCubeToLeft = animation([
     ])
   ], { params: { enterTiming: '0.6', leaveTiming: '0.6', enterDelay: '0', leaveDelay: '0' } });
 
-export const rotateCubeToTop = animation([
+export const rotateCubeToTop: AnimationReferenceMetadata = animation([
     query(':enter, :leave', style(sharedStyles)
       , { optional: true }),
     group([
@@ -347,7 +347,7 @@ export const rotateCubeToTop = animation([
     ])
 ], { params: { enterTiming: '0.6', leaveTiming: '0.6',  enterDelay: '0', leaveDelay: '0' } });
 
-  export const rotateCubeToBottom = animation( [
+  export const rotateCubeToBottom: AnimationReferenceMetadata = animation( [
     query(':enter, :leave', style(sharedStyles)
       , { optional: true }),
     group([
@@ -370,7 +370,7 @@ export const rotateCubeToTop = animation([
     ])
     ], { params: { enterTiming: '0.6', leaveTiming: '0.6',  enterDelay: '0', leaveDelay: '0' }});
 
-    export const rotateNewsPaper = animation( [
+    export const rotateNewsPaper: AnimationReferenceMetadata = animation( [
     query(':enter, :leave', style(sharedStyles)
       , { optional: true }),
     group([
@@ -392,7 +392,7 @@ export const rotateCubeToTop = animation([
     ])
     ], { params: { enterTiming: '0.5', leaveTiming: '0.7', enterDelay: '0', leaveDelay: '0' }});
 
-  export const rotateFall = animation( [
+  export const rotateFall: AnimationReferenceMetadata = animation( [
     query(':enter, :leave', style(sharedStyles)
       , { optional: true }),
     group([
@@ -417,7 +417,7 @@ export const rotateCubeToTop = animation([
     ], { params: { enterTiming: '1', enterDelay: '0', leaveDelay: '0' }});
 
 /** Rotate Room */
-     export const rotateRoomToLeft = animation( [
+     export const rotateRoomToLeft: AnimationReferenceMetadata = animation( [
     query(':enter, :leave', style(sharedStyles)
       , { optional: true }),
     group([
@@ -438,7 +438,7 @@ export const rotateCubeToTop = animation([
     ])
     ], { params: { enterTiming: '0.8', leaveTiming: '0.8',  enterDelay: '0', leaveDelay: '0' }});
 
-    export const rotateRoomToRight = animation( [
+    export const rotateRoomToRight: AnimationReferenceMetadata = animation( [
     query(':enter, :leave', style(sharedStyles)
       , { optional: true }),
     group([
@@ -459,7 +459,7 @@ export const rotateCubeToTop = animation([
     ])
     ], { params: { enterTiming: '0.8', leaveTiming: '0.8',  enterDelay: '0', leaveDelay: '0' }});
 
-      export const rotateRoomToTop = animation( [
+      export const rotateRoomToTop: AnimationReferenceMetadata = animation( [
     query(':enter, :leave', style(sharedStyles)
       , { optional: true }),
     group([
@@ -481,7 +481,7 @@ export const rotateCubeToTop = animation([
     ])
     ], { params: { enterTiming: '0.8', leaveTiming: '0.8', enterDelay: '0', leaveDelay: '0' }});
 
-       export const rotateRoomToBottom = animation( [
+       export const rotateRoomToBottom: AnimationReferenceMetadata = animation( [
     query(':enter, :leave', style(sharedStyles)
       , { optional: true }),
     group([
@@ -502,7 +502,7 @@ export const rotateCubeToTop = animation([
     ], { params: { enterTiming: '0.8',leaveTiming: '0.8', enterDelay: '0', leaveDelay: '0' }});
 
     /** Rotate Sides */
-     export const rotateSides = animation( [
+     export const rotateSides: AnimationReferenceMetadata = animation( [
     query(':enter, :leave', style(sharedStyles)
       , { optional: true }),
     group([
@@ -523,7 +523,7 @@ export const rotateCubeToTop = animation([
     ], { params: { enterTiming: '0.5', leaveTiming: '0.5', enterDelay: '0', leaveDelay: '0' }});
 
      /** Rotate Flip */
-     export const rotateFlipToRight = animation( [
+     export const rotateFlipToRight: AnimationReferenceMetadata = animation( [
     query(':enter, :leave', style(sharedStyles)
       , { optional: true }),
     group([
@@ -544,7 +544,7 @@ export const rotateCubeToTop = animation([
     ])
     ], { params: { enterTiming: '0.5', leaveTiming: '0.5', enterDelay: '0', leaveDelay: '0' }});
 
-     export const rotateFlipToLeft = animation( [
+     export const rotateFlipToLeft: AnimationReferenceMetadata = animation( [
     query(':enter, :leave', style(sharedStyles)
       , { optional: true }),
     group([
@@ -565,7 +565,7 @@ export const rotateCubeToTop = animation([
     ])
     ], { params: { enterTiming: '0.5', leaveTiming: '0.5', enterDelay: '0', leaveDelay: '0' }});
 
-       export const rotateFlipToTop = animation( [
+       export const rotateFlipToTop: AnimationReferenceMetadata = animation( [
     query(':enter, :leave', style(sharedStyles)
       , { optional: true }),
     group([
@@ -586,7 +586,7 @@ export const rotateCubeToTop = animation([
     ])
     ], { params: { enterTiming: '0.5', leaveTiming: '0.5', enterDelay: '0', leaveDelay: '0' }});
 
-     export const rotateFlipToBottom = animation( [
+     export const rotateFlipToBottom: AnimationReferenceMetadata = animation( [
     query(':enter, :leave', style(sharedStyles)
       , { optional: true }),
     group([
@@ -609,7 +609,7 @@ export const rotateCubeToTop = animation([
 
   /** Rotate Glue */
 
-      export const rotateGlueFromRight = animation( [
+      export const rotateGlueFromRight: AnimationReferenceMetadata = animation( [
     query(':enter, :leave', style(sharedStyles)
       , { optional: true }),
     group([
@@ -628,7 +628,7 @@ export const rotateCubeToTop = animation([
     ], { params: { enterTiming: '0.6', leaveTiming: '0.8', enterDelay: '0.2', leaveDelay: '0' }});
 
 
-  export const rotateGlueFromLeft = animation( [
+  export const rotateGlueFromLeft: AnimationReferenceMetadata = animation( [
     query(':enter, :leave', style(sharedStyles)
       , { optional: true }),
     group([
@@ -666,7 +666,7 @@ export const rotateGlueFromBottom= animation( [
     ])
     ], { params: { enterTiming: '0.6', leaveTiming: '0.8', enterDelay: '0.2', leaveDelay: '0' }});
 
-    export const rotateGlueFromTop = animation( [
+    export const rotateGlueFromTop: AnimationReferenceMetadata = animation( [
     query(':enter, :leave', style(sharedStyles)
       , { optional: true }),
     group([
@@ -685,7 +685,7 @@ export const rotateGlueFromBottom= animation( [
     ])
     ], { params: { enterTiming: '0.6', leaveTiming: '0.8', enterDelay: '0.2', leaveDelay: '0' }});
 
-     export const rotateCarouselToLeft = animation( [
+     export const rotateCarouselToLeft: AnimationReferenceMetadata = animation( [
     query(':enter, :leave', style(sharedStyles)
       , { optional: true }),
     group([
@@ -728,7 +728,7 @@ export const rotateGlueFromBottom= animation( [
     ])
     ], { params: { enterTiming: '0.8', leaveTiming: '0.8', enterDelay: '0', leaveDelay: '0' }});
 
-     export const rotateCarouselToTop = animation( [
+     export const rotateCarouselToTop: AnimationReferenceMetadata = animation( [
     query(':enter, :leave', style(sharedStyles)
       , { optional: true }),
     group([
@@ -749,7 +749,7 @@ export const rotateGlueFromBottom= animation( [
     ])
     ], { params: { enterTiming: '0.8', leaveTiming: '0.8', enterDelay: '0', leaveDelay: '0' }});
 
-        export const rotateCarouselToBottom = animation( [
+        export const rotateCarouselToBottom: AnimationReferenceMetadata = animation( [
     query(':enter, :leave', style(sharedStyles)
       , { optional: true }),
     group([
@@ -771,7 +771,7 @@ export const rotateGlueFromBottom= animation( [
     ], { params: { enterTiming: '0.8', leaveTiming: '0.8', enterDelay: '0', leaveDelay: '0' }});
 
 /** Slide */
-export const slide = animation([
+export const slide: AnimationReferenceMetadata = animation([
       query(':enter, :leave', style(sharedStyles)
       , { optional: true }),
     group([
