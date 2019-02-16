@@ -1,8 +1,21 @@
 {
   "name": "ngx-router-animations",
-  "version": "0.0.4",
+  "version": "0.0.7",
   "peerDependencies": {
     "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
     "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
-  }
+  },
+  "keywords": [
+    "ngx",
+    "angular",
+    "router animations",
+    "angular router animations",
+    "angular animations",
+    "angular router transitions",
+    "angular page transitions"
+  ],
+  "license": "MIT",
+  "repository": "https://github.com/vugar005/ngx-router-animations",
+  "author": "Vugar Abdullayev",
+  "homepage": "https://ngx-router-animations.stackblitz.io/"
 }
