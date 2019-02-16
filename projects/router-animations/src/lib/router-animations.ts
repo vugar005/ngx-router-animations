@@ -80,7 +80,6 @@ import {
       , { optional: true }),
     group([
    query(':enter', [
-       style({ 'z-index': '9999' }),
         animate('{{enterTiming}}s {{enterDelay}}s ease', moveFromLeftKeyframes)
       ], { optional: true }),
 
@@ -95,7 +94,6 @@ import {
       , { optional: true }),
     group([
    query(':enter', [
-         style({ 'z-index': '9999' }),
         animate('{{enterTiming}}s {{enterDelay}}s ease',moveFromRightKeyframes)
       ], { optional: true }),
 
@@ -110,7 +108,6 @@ import {
       , { optional: true }),
     group([
    query(':enter', [
-         style({ 'z-index': '9999' }),
         animate('{{enterTiming}}s {{enterDelay}}s ease', moveFromTopKeyframes)
       ], { optional: true }),
 
@@ -126,7 +123,6 @@ import {
       , { optional: true }),
     group([
    query(':enter', [
-         style({ 'z-index': '9999' }),
         animate('{{enterTiming}}s {{enterDelay}}s ease', moveFromBottomKeyframes)
       ], { optional: true }),
 
@@ -614,12 +610,13 @@ export const rotateCubeToTop: AnimationReferenceMetadata = animation([
       , { optional: true }),
     group([
         query(':enter', [
-          style({opacity: '0', 'transform-origin': '50% 50%', 'z-index': 9999}),
+          style({ 'transform-origin': '50% 50%'}),
         animate('{{enterTiming}}s {{enterDelay}}s ease-out', moveFromRightKeyframes)
       ], { optional: true }),
    query(':leave', [
+      style({ 'transform-origin': '0% 50%'}),
         animate('{{leaveTiming}}s {{leaveDelay}}s ease-in', keyframes([
-            style({ opacity: '1', 'transform-origin': '0% 50%', offset: 0}),
+            style({ opacity: '1', offset: 0}),
             style({ opacity: '0.8', 'transform': 'rotateY(15deg)', 'animation-timing-function': 'ease-out', offset: 0.4}),
               style({opacity: '0', transform: 'scale(0.8) translateZ(-200px)', offset: 1 })
         ]))
@@ -633,12 +630,13 @@ export const rotateCubeToTop: AnimationReferenceMetadata = animation([
       , { optional: true }),
     group([
         query(':enter', [
-          style({opacity: '0', 'transform-origin': '50% 50%', 'z-index': 9999}),
+          style({ 'transform-origin': '50% 50%'}),
         animate('{{enterTiming}}s {{enterDelay}}s ease-out', moveFromLeftKeyframes)
       ], { optional: true }),
    query(':leave', [
+       style({ 'transform-origin': '100% 50%'}),
         animate('{{leaveTiming}}s {{leaveDelay}}s ease-in', keyframes([
-            style({ opacity: '1', 'transform-origin': '100% 50%', offset: 0}),
+            style({ opacity: '1', offset: 0}),
             style({ opacity: '0.8', 'transform': 'rotateY(-15deg)', 'animation-timing-function': 'ease-out', offset: 0.4}),
               style({opacity: '0', transform: 'scale(0.8) translateZ(-200px)', offset: 1 })
         ]))
@@ -652,7 +650,7 @@ export const rotateGlueFromBottom= animation( [
       , { optional: true }),
     group([
         query(':enter', [
-          style({opacity: '0', 'transform-origin': '50% 50%', 'z-index': 9999}),
+          style({ 'transform-origin': '50% 50%' }),
         animate('{{enterTiming}}s {{enterDelay}}s ease-out', moveFromBottomKeyframes)
       ], { optional: true }),
    query(':leave', [
@@ -671,7 +669,7 @@ export const rotateGlueFromBottom= animation( [
       , { optional: true }),
     group([
         query(':enter', [
-          style({opacity: '0', 'transform-origin': '50% 50%', 'z-index': 9999}),
+          style({'transform-origin': '50% 50%'}),
         animate('{{enterTiming}}s {{enterDelay}}s ease-out', moveFromTopKeyframes)
       ], { optional: true }),
    query(':leave', [

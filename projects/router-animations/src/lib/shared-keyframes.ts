@@ -1,8 +1,8 @@
 import {keyframes, style, AnimationKeyframesSequenceMetadata} from '@angular/animations';
 export const moveFromRightKeyframes: AnimationKeyframesSequenceMetadata =
    keyframes([
-               style({ transform: 'translateX(100%)', offset: 0 }),
-            style({transform: 'translateX(0%)', opacity: '1', offset: 1})
+               style({ transform: 'translateX(100%)', offset: 0, 'z-index': '9999'  }),
+            style({transform: 'translateX(0%)', offset: 1})
         ]);
 
   export const moveToLeftKeyframes: AnimationKeyframesSequenceMetadata  =
@@ -14,8 +14,8 @@ export const moveFromRightKeyframes: AnimationKeyframesSequenceMetadata =
 
      export const moveFromLeftKeyframes: AnimationKeyframesSequenceMetadata  =
    keyframes([
-               style({ transform: 'translateX(-100%)', offset: 0 }),
-            style({transform: 'translateX(0%)',  opacity: '1', offset: 1})
+               style({ transform: 'translateX(-100%)', offset: 0, 'z-index': '9999' }),
+            style({transform: 'translateX(0%)',  offset: 1})
         ]);
 
   export const moveToRightKeyframes: AnimationKeyframesSequenceMetadata  =
@@ -26,8 +26,8 @@ export const moveFromRightKeyframes: AnimationKeyframesSequenceMetadata =
 
     export const moveFromTopKeyframes: AnimationKeyframesSequenceMetadata  =
     keyframes([
-            style({ transform: 'translateY(-100%)', offset: 0 }),
-        style({transform: 'translateY(0%)',  opacity: '1', offset: 1})
+            style({ transform: 'translateY(-100%)', offset: 0, 'z-index': '9999'  }),
+        style({transform: 'translateY(0%)',  offset: 1})
     ]);
 
     export const moveToBottomKeyframes: AnimationKeyframesSequenceMetadata  =
@@ -38,8 +38,8 @@ export const moveFromRightKeyframes: AnimationKeyframesSequenceMetadata =
 
     export const moveFromBottomKeyframes: AnimationKeyframesSequenceMetadata  =
     keyframes([
-               style({ transform: 'translateY(100%)', offset: 0 }),
-            style({transform: 'translateY(0%)',  opacity: '1', offset: 1})
+               style({ transform: 'translateY(100%)', offset: 0, 'z-index': '9999'  }),
+            style({transform: 'translateY(0%)',  offset: 1})
         ]);
 
      export const moveToTopKeyframes: AnimationKeyframesSequenceMetadata  =
