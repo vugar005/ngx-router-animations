@@ -502,21 +502,22 @@ export const rotateCubeToTop: AnimationReferenceMetadata = animation([
     query(':enter, :leave', style(sharedStyles)
       , { optional: true }),
     group([
-
         query(':enter', [
-        animate('{{enterTiming}}s {{enterDelay}}s ease-out', keyframes([
-              style({ opacity: '0', 'transform-origin': '150% 50%', transform: 'translateZ(-500px) rotateY(-90deg)','z-index': '9999', offset: 0 }),
-              style({opacity: '1', transform: 'translateX(0px) rotateY(0deg)',offset: 1 })
+          style({'transform-origin': '150% 50%', opacity: 0}),
+              animate('{{enterTiming}}s {{enterDelay}}s ease-out', keyframes([
+              style({ opacity: '0', transform: 'translateZ(-500px) rotateY(-90deg)','z-index': '9999', offset: 0 }),
+              style({opacity: '1', transform: 'translate3d(0,0,0)',offset: 1 })
         ]))
       ], { optional: true }),
    query(':leave', [
-        animate('{{leaveTiming}}s {{leaveDelay}}s ease-in', keyframes([
-            style({ opacity: '1','transform-origin': '-50% 50%', transform: 'translateZ(0px) rotateY(0deg)', offset: 0}),
-              style({opacity: '0', transform: 'translateZ(-500px) rotateY(90deg)', offset: 1 })
+      style({'transform-origin': '-50% 50%'}),
+            animate('{{leaveTiming}}s {{leaveDelay}}s ease-in', keyframes([
+            style({ opacity: '1',transform: 'translate3d(0,0,0)', offset: 0}),
+            style({ opacity: '0.5', transform: 'translateZ(-500px) rotateY(90deg)',offset: 1}),
         ]))
       ], { optional: true }),
     ])
-    ], { params: { enterTiming: '0.5', leaveTiming: '0.5', enterDelay: '0', leaveDelay: '0' }});
+    ], { params: { enterTiming: '0.5', leaveTiming: '0.5', enterDelay: '0.2', leaveDelay: '0' }});
 
      /** Rotate Flip */
      export const rotateFlipToRight: AnimationReferenceMetadata = animation( [
@@ -526,7 +527,7 @@ export const rotateCubeToTop: AnimationReferenceMetadata = animation([
 
         query(':enter', [
           style({opacity: '0', 'transform-origin': '50% 50%'}),
-        animate('{{enterTiming}}s {{enterTiming}}s ease-out', keyframes([
+          animate('{{enterTiming}}s {{enterTiming}}s ease-out', keyframes([
               style({opacity: '0.2', transform: 'translateZ(-1000px) rotateY(-90deg)', offset: 0 }),
               style({opacity: '1', transform: 'translateZ(0px) rotateY(0deg)',offset: 1 })
         ]))
