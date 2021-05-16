@@ -10,15 +10,15 @@
   font-size: 16px;
   cursor: pointer;
 }
-/deep/ .animation-menu {
+:ng-deep .animation-menu {
   min-width: 256px !important;
 }
-/deep/ .mat-menu-item {
+:ng-deep .mat-menu-item {
   font-size: 13px;
   color: rgb(170, 170, 170) !important;
   height: 36px !important;
 }
-/deep/ .mat-menu-panel {
+:ng-deep .mat-menu-panel {
     //  position: fixed;
     //  left: 0;
     //  right: 0;
