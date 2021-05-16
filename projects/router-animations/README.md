@@ -7,7 +7,7 @@
 
 ngx-router-animations is a collection of awesome, reusable router animations. Inspired by tympanus.net (thanks to Pedro Botelho)  and implements those animations but with Angular Animation Package.
 
-[![npm](https://img.shields.io/npm/l/ngx-router-animations.svg)]() [![NPM Downloads](https://img.shields.io/npm/dt/ngx-router-animations.svg)](https://www.npmjs.com/package/ngx-router-animations) [![npm](https://img.shields.io/twitter/follow/vugar005.svg?label=Follow)](https://twitter.com/vugar005) [![npm](https://img.shields.io/github/issues/vugar005/ngx-router-animations.svg)](https://github.com/vugar005/ngx-router-animations) [![npm](https://img.shields.io/github/last-commit/vugar005/ngx-router-animations.svg)](https://github.com/vugar005/ngx-router-animations)
+[![npm](https://img.shields.io/npm/l/ngx-router-animations.svg)]() [![NPM Downloads](https://img.shields.io/npm/dt/ngx-router-animations.svg)](https://www.npmjs.com/package/ngx-router-animations) [![npm demo](https://img.shields.io/badge/demo-online-ed1c46.svg)](https://stackblitz.com/edit/ngx-router-animations?file=src%2Fapp%2Fsimple-demo%2Fsimple-demo.component.ts) [![npm](https://img.shields.io/twitter/follow/vugar005.svg?label=Follow)](https://twitter.com/vugar005) [![npm](https://img.shields.io/github/issues/vugar005/ngx-router-animations.svg)](https://github.com/vugar005/ngx-router-animations) [![npm](https://img.shields.io/github/last-commit/vugar005/ngx-router-animations.svg)](https://github.com/vugar005/ngx-router-animations) ![npm](https://img.shields.io/readthedocs/ngx-router-animations.svg)
 
 
 > **Note**: the library requires Angular 4.2+, which introduced [different new animation APIs](https://www.yearofmoo.com/2017/06/new-wave-of-animation-features.html) needed by `ngx-router-animations`.
@@ -26,7 +26,6 @@ ngx-router-animations is a collection of awesome, reusable router animations. In
 
 #####  Load  BrowserAnimationsModule which is needed by Angular Animations
 ```typescript
-import { FilePickerModule } from 'ngx-awesome-uploader';
 @NgModule({
   imports: [
     ...
