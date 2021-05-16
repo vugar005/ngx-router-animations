@@ -17,5 +17,8 @@
   "license": "MIT",
   "repository": "https://github.com/vugar005/ngx-router-animations",
   "author": "Vugar Abdullayev",
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
   "homepage": "https://ngx-router-animations.stackblitz.io/"
 }
