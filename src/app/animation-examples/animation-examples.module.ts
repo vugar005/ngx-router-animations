@@ -8,8 +8,8 @@ import { CommonModule } from '@angular/common';
 import { AnimationExamplesComponent } from './animation-examples.component';
 import { ContactComponent } from './contact/contact.component';
 import { NavigationComponent } from './navigation/navigation.component';
-import {MatButtonModule} from '@angular/material/button';
-import {MatMenuModule} from '@angular/material/menu';
+import {MatLegacyButtonModule as MatButtonModule} from '@angular/material/legacy-button';
+import {MatLegacyMenuModule as MatMenuModule} from '@angular/material/legacy-menu';
 
 @NgModule({
   imports: [
